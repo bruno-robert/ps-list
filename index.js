@@ -1,4 +1,6 @@
 'use strict';
+require ('hazardous');  // makes this module work when it's unpacked from the app.asar package when the app is packed with electron-build
+// it overloads path.join to change asar.app to asar.app.unpacked
 const util = require('util');
 const path = require('path');
 const childProcess = require('child_process');
